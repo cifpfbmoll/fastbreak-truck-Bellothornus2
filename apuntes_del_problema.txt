@@ -1,0 +1,20 @@
+El diseño de o patrón de diseño que utilizaría sería el:
+
+	"Template Pattern"
+
+Porque en resumidas cuentas, los métodos y propiedades serán los mismos
+y se invocarán de la misma manera solo que lo único que cambiaría
+sería el output, por lo tanto un "Desayuno" si hago mostrarItems()
+será diferente si lo hago con un desayuno o con otro, ya que estos pueden
+contener distintas instrucciones según con que clase se las haya creado
+como un Ollivanders básicamente.
+
+vale, si creo una clase que implanta Item que sea "Juguetes"
+y a su vez creo otra clase que extienda de "Juguetes" llamado
+Plumbus puedo volver a meterle el nombre() y el pvp()
+así cuando se haga el mostrarItems() y el getCoste();
+seguirá funcionando tanto sea un Smiggles, como un Eyeholes
+como un Plumbus, solo hay que cmabiar en el Desayuno
+que al prepararEyeHoles, estos hagan al Desayuno, un .addItem()
+de un "new Plumbus()"
+
